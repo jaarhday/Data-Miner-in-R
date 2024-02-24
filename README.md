@@ -1,10 +1,10 @@
 # Overview
 
-As a computer science student seeking to expand my skills, I developed a software application using the R language to demonstrate proficiency in data mining techniques, specifically association rule learning with the Apriori algorithm. The software reads transaction data from a CSV file, preprocesses it, runs the Apriori algorithm to discover association rules, and then tests these rules based on user-defined itemsets and outcomes.
+As a computer science student seeking to expand my skills, I developed a software application using the R language to demonstrate proficiency in data mining techniques, specifically, association rule learning with the Apriori algorithm. The software reads transaction data from a CSV file, preprocesses it, runs the Apriori algorithm to discover association rules, and then tests these rules based on user-defined itemsets and outcomes.
 
-The purpose of writing this software was to deepen my understanding of the R programming language syntax and its applications in data mining and analysis. By building this application, I aimed to strengthen my knowledge of working with data frames, applying algorithms, and interpreting the results for actionable insights.
+This software was written to deepen my understanding of the R programming language syntax and its applications in data mining and analysis. By building this application, I aimed to strengthen my knowledge of working with data frames, applying algorithms, and interpreting the results for actionable insights.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.loom.com/share/1f61da88fd57477199a394dc0a72430c?sid=a6a179a4-ed98-4148-829b-96d098d4cdd5)
 
 # Development Environment
 
