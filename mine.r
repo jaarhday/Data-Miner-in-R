@@ -71,8 +71,10 @@ test_association_rules <- function(transactions, rules, itemset, outcome) {
       , ":", support_itemset, "\n")
 
   cat("Support for", outcome, ":", support_outcome, "\n")
-  cat("Support for", paste(itemset, collapse = " & "), "and", 
+
+  cat("Support for", paste(itemset, collapse = " & "), "and",
       outcome, ":", support_itemset_outcome, "\n")
+
   cat("Confidence for", paste(itemset, collapse = " & ")
       , "->", outcome, ":", confidence, "\n")
 }
