@@ -27,8 +27,10 @@ convert_to_transactions <- function(data) {
 }
 
 # Function to run Apriori algorithm and return rules
-run_apriori <- function(transactions, min_support = 0.05, min_confidence = 0.7) {
-  rules <- apriori(transactions, parameter = list(support = min_support, confidence = min_confidence))
+run_apriori <- function(transactions, min_support = 0.05, 
+                        min_confidence = 0.7) {
+  rules <- apriori(transactions, parameter = list(support = min_support,
+                                                  confidence = min_confidence))
   return(rules)
 }
 
@@ -65,14 +67,19 @@ test_association_rules <- function(transactions, rules, itemset, outcome) {
   confidence <- support_itemset_outcome / support_itemset
 
   # Print results
-  cat("Support for", paste(itemset, collapse = " & "), ":", support_itemset, "\n")
+  cat("Support for", paste(itemset, collapse = " & ")
+      , ":", support_itemset, "\n")
+
   cat("Support for", outcome, ":", support_outcome, "\n")
-  cat("Support for", paste(itemset, collapse = " & "), "and", outcome, ":", support_itemset_outcome, "\n")
-  cat("Confidence for", paste(itemset, collapse = " & "), "->", outcome, ":", confidence, "\n")
+  cat("Support for", paste(itemset, collapse = " & "), "and", 
+      outcome, ":", support_itemset_outcome, "\n")
+  cat("Confidence for", paste(itemset, collapse = " & ")
+      , "->", outcome, ":", confidence, "\n")
 }
 
 # Main function to orchestrate the entire process
-main <- function(file_path, min_support = 0.05, min_confidence = 0.7, itemset = c("Bread", "Coffee"), outcome = "Pastry") {
+main <- function(file_path, min_support = 0.05, min_confidence = 0.7,
+                 itemset = c("Bread", "Coffee"), outcome = "Pastry") {
   # Load libraries
   load_libraries()
 
